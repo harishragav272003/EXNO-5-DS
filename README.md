@@ -20,7 +20,7 @@ STEP 5:Include Necessary parameters in each functions.
 # Coding and Output:
 ### TO CAPTURE A TREND
 ### 1.Line Chart
-```
+```python
 import matplotlib.pyplot as plt
 import numpy as np
 x=[0,1,2,3,4,5]
@@ -32,7 +32,7 @@ plt.show()
 
 
 ### 2.Multi-Line Chart
-```
+```python
 x1=[1,2,3]
 y1=[2,4,1]
 plt.plot(x1,y1,label="line 1")
@@ -49,7 +49,7 @@ plt.show()
 
 
 ### 3.Area Chart
-```
+```python
 x=[1,2,3,4,5]
 y1=[10,12,14,16,18]
 y2=[5,7,9,11,13]
@@ -65,7 +65,7 @@ plt.show()
 
 
 ### 4.Stacked Area Chart
-```
+```python
 plt.stackplot(x,y1,y2,y3,labels=['Line 1','Line 2','Line 3'])
 plt.legend(loc='upper left')
 plt.title('Stacked Line Chart')
@@ -77,7 +77,7 @@ plt.show()
 
 
 ### 5.Spline Chart
-```
+```python
 from scipy.interpolate import make_interp_spline
 x=np.array([1,2,3,4,5,6,7,8,9,10])
 y=np.array([2,4,5,7,8,8,9,10,11,12])
@@ -94,7 +94,7 @@ plt.show()
 
 ### TO VISUALIZE RELATIONSHIPS
 ### 1.Bar Chart
-```
+```python
 val=[5,6,3,7,2]
 names=["A","B","C","D","E"]
 plt.bar(names,val,color="blue")
@@ -104,7 +104,7 @@ plt.show()
 
 
 ### 2.Scatter Plot
-```
+```python
 x=[0,1,2,3,4,5]
 y=[0,1,4,9,16,25]
 plt.scatter(x,y,s=30,color="red")
@@ -114,7 +114,7 @@ plt.show()
 
 
 ### 3.Bubble Chart
-```
+```python
 x = [1, 2, 3, 4, 5]
 y = [10, 15, 20, 25, 30]
 sizes = [100, 200, 300, 400, 500]
@@ -129,7 +129,7 @@ plt.show()
 
 ### TO CAPTURE DISTRIBUTIONS
 ### 1.Histogram
-```
+```python
 ages=[2,5,70,40,30,45,50,45,43,40,44,60,7,13,57,18,90,77,32,21,20,40]
 range=(0,100)
 bins=10
@@ -143,7 +143,7 @@ plt.show()
 
 
 ### 2.Box Plot
-```
+```python
 np.random.seed(0)
 data=np.random.normal(loc=0,scale=1,size=100)
 data
@@ -157,7 +157,7 @@ ax.set_title('Box Plot')
 
 
 ### 3.Violin Plot
-```
+```python
 data = [np.random.normal(loc=0, scale=1, size=100),
         np.random.normal(loc=2, scale=1, size=100),
         np.random.normal(loc=1, scale=2, size=100)]
@@ -172,7 +172,7 @@ plt.show()
 
 
 ### 4.Density Chart
-```
+```python
 data = np.random.normal(0, 1, 1000)
 plt.hist(data, bins=30, density=True, alpha=0.5)
 plt.title('Density Plot Example')
@@ -189,7 +189,7 @@ plt.show()
 
 
 ### 5.Pie Chart
-```
+```python
 act=['eat','sleep','work','play']
 slices=[3,7,8,6]
 color=['r','y','g','b']
